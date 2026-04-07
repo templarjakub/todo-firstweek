@@ -49,3 +49,5 @@ Bash
 npm run dev
 Open in browser:
 Navigate to http://localhost:5173 to view the application.
+
+<img width="3045" height="2165" alt="image" src="https://github.com/user-attachments/assets/0c2fecf6-13e6-41a8-803e-29966af6e869" />
