@@ -1,16 +1,51 @@
-# React + Vite
+todo-firstweek
+A modern, high-performance shopping list and task management application built with React 19 and Vite 6. This project features a modern design system, global state management, and owner-based permission logic.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tech Stack
+Frontend Framework: React 19.
 
-Currently, two official plugins are available:
+Build Tool: Vite 6.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Styling: Tailwind CSS v3 (PostCSS integrated).
 
-## React Compiler
+State Management: Zustand (Global Store).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Icons: Lucide React.
 
-## Expanding the ESLint configuration
+✨ Key Features
+List Detail View: A centralized dashboard to manage items and collaborators.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Member Management: Owners can invite new members and manage existing collaborators.
+
+Ownership Logic: Dynamic UI that toggles features (like Archive or Remove Member) based on whether the user is an OWNER or MEMBER.
+
+Global State: Persistent-ready data architecture using Zustand to handle list updates across components.
+
+Responsive Design: Optimized for both desktop and mobile viewing using Tailwind's utility-first approach.
+
+📂 Project Structure
+Plaintext
+src/
+├── components/   # Reusable UI (ItemRow, ItemManager, MemberManager, etc.)
+├── pages/        # Route-level views (ListDetailView)
+├── store/        # Zustand global state (useListStore)
+├── types/        # TypeScript interfaces and models
+├── App.tsx       # Root application component
+└── index.css     # Tailwind directives and custom design tokens
+🛠️ Getting Started
+Prerequisites
+Node.js (v24.14.0 or higher recommended)
+
+npm (v11.9.0 or higher)
+
+Installation
+Clone the repository and install dependencies:
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+Open in browser:
+Navigate to http://localhost:5173 to view the application.
